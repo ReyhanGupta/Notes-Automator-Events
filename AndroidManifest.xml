@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.db_listview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+<uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+   <uses-permission android:name="android.permission.BLUETOOTH"/>
+   <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+   <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+       <uses-permission android:name="android.permission.CALL_PHONE" />
+       <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+                 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+       
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.db_listview.List_MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Modify"
+            android:label="@string/app_name" >
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.Functional" />
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".Automator"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Automator" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Binaural"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Binaural" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Sleep"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Sleep" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+          <activity
+            android:name=".TestNew"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.TestNew" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Disabled"
+            android:label="@string/app_name" 
+                         android:theme="@android:style/Theme.NoDisplay">
+              
+            <intent-filter>
+                <action android:name="com.example.db_listview.Disabled" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Enabled"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay"
+             >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Enabled" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".AddEvent"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.AddEvent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".Meditation_Rpt_Time"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Meditation_Rpt_Time" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity
+            android:name=".ModifyEvent"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.ModifyEvent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           
+            <activity
+            android:name=".Send"
+            android:label="@string/app_name" >
+             
+            <intent-filter>
+                <action android:name="com.example.db_listview.Send" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+         <activity
+            android:name=".Date"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Date" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Meditation_ScheduledReciever"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Meditation_ScheduledReciever" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".MeditationService"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.MeditationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity
+            android:name=".BinauralService"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.BinauralService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Rpt_Time"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Rpt_Time" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".ProfileService"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.ProfileService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".End_ProfileService"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.End_ProfileService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity
+            android:name=".Meditation"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Meditation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              <activity
+            android:name=".Meditation_AutomatorNew"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Meditation_AutomatorNew" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           
+             <activity
+            android:name=".Music_Select"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Music_Select" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".RepeatService"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.RepeatService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           
+            <activity
+            android:name=".TimerTasks"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.TimerTasks" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           <activity
+            android:name=".Transfer"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Transfer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".AutomatorNew"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.AutomatorNew" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pagers"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="com.example.db_listview.Pagers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Remind"
+            android:label="@string/app_name" >
+            
+               <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.Functional" />
+            <intent-filter>
+                <action android:name="com.example.db_listview.Remind" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Functional"
+            android:label="@string/app_name" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.List_MainActivity" />
+               
+            <intent-filter>
+                <action android:name="com.example.db_listview.Functional" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MoreInfo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MoreInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Alert"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Alert" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Alarm_Rec"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Alarm_Rec" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".Profile_Rec"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Profile_Rec" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".RingtonePlayingService"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.RingtonePlayingService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".End_MyScheduleReciever"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.End_MyScheduleReciever" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name=".News"
+            android:label="@string/app_name" >
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.Functional" />
+            <intent-filter>
+                <action android:name="com.example.db_listview.News" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Search"
+            android:label="@string/app_name" >
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.Functional" />
+            <intent-filter>
+                <action android:name="com.example.db_listview.Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.About" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".End_MeditationScheduledReciever"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.End_MeditationScheduledReciever" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".End_MeditationService"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.End_MeditationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".EventService"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.EventService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".MyEventReciever"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MyEventReciever" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Stop"
+            android:label="@string/app_name" >
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.db_listview.Functional" />
+            <intent-filter>
+                <action android:name="com.example.db_listview.Stop" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".Adapter"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Adapter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".ButtonReciever"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.ButtonReciever" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name=".MyCallRec"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MyCallRec" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity
+            android:name=".CallService"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.CallService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Frag2"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Frag2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Frag3"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Frag3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".MsgService"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MsgService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fragment1"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Fragment1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".MessageRec"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MessageRec" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".Receiver"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Receiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          
+           <activity
+            android:name=".MyNotReceiver"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MyNotReceiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+             <activity
+            android:name=".MyEmaRec"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.MyEmaRec" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+               <activity
+            android:name=".EmailService"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.EmailService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           
+            <activity
+            android:name=".NotService"
+            android:label="@string/app_name" 
+            
+            >
+            <intent-filter>
+                <action android:name="com.example.db_listview.NotService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           
+           
+         <activity
+            android:name=".Preferences"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.db_listview.Preferences" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Alarm_Rec" />
+                <receiver android:name=".MyEventReciever" />
+                <receiver android:name=".Receiver" />
+                
+                 <receiver android:name=".MyScheduledReceiver" />
+                         <receiver android:name=".RepeatReceiver" />
+                                          <receiver android:name=".End_MyScheduleReciever" />
+                                                    
+                                                    
+       <receiver android:name=".Meditation_ScheduledReciever" />
+              <receiver android:name=".MyCallRec" />
+              <receiver android:name=".MyEmaRec" />
+              
+              <receiver android:name=".MessageRec" />
+                     <receiver android:name=".MyNotReceiver" />
+              
+               <receiver android:name=".End_MeditationScheduledReciever" />
+       
+               <receiver android:name=".ButtonReciever" />
+               
+        <service android:name="RingtonePlayingService"
+            android:enabled="true">
+        </service>
+        
+          <service android:name="EventService"
+            android:enabled="true">
+        </service>
+        
+<service android:name="MeditationService"
+            android:enabled="true">
+        </service>
+        
+
+            <service android:name="ProfileService"
+            android:enabled="true">
+        </service>
+        
+             <service android:name="NotService"
+            android:enabled="true">
+        </service>
+        
+              <service android:name="End_MeditationService"
+            android:enabled="true">
+        </service>
+        
+            <service android:name="RepeatService"
+            android:enabled="true">
+        </service>
+        
+            <service android:name="MsgService"
+            android:enabled="true">
+        </service>
+        
+            <service android:name="End_ProfileService"
+            android:enabled="true">
+        </service>
+        
+            <service android:name="CallService"
+            android:enabled="true">
+        </service>
+        
+             <service android:name="BinauralService"
+            android:enabled="true">
+        </service>
+        
+             <service android:name="EmailService"
+            android:enabled="true">
+        </service>
+        
+    </application>
+
+</manifest>

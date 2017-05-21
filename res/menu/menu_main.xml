@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+       android:id="@+id/aboutUs"
+       android:icon="@drawable/info"
+       android:title="About Us"
+       android:showAsAction="always"
+       
+       ></item>
+    
+    
+    
+    
+     
+     
+     <item
+       android:id="@+id/power"
+       android:icon="@drawable/exit"
+       android:title="Exit"
+       android:showAsAction="always"
+       
+       ></item>
+     
+     
+
+</menu>

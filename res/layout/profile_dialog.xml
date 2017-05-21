@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Profile"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/house" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saves"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:text="Cancel" />
+    </LinearLayout>
+    
+     <ScrollView 
+        
+         android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <Switch
+             android:id="@+id/wifi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+                           android:drawableLeft="@drawable/ic_wifi_black_18dp"
+             
+             android:text=" Wi-Fi                                          " />
+          <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+         <Switch
+             android:id="@+id/bluetooth"
+             android:layout_width="wrap_content"
+                                        android:drawableLeft="@drawable/bluetoot"
+             
+             android:layout_height="wrap_content"
+             android:text="Bluetooth                                  " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/mobile"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                                                                    android:drawableLeft="@drawable/mobile_data"
+              
+              android:text="Mobile Data                                " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/loud"
+                                                                    android:drawableLeft="@drawable/loud"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Profile: Loud                               " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/vibrate"
+              android:layout_width="wrap_content"
+                                                                    android:drawableLeft="@drawable/vibrate"
+              
+              android:layout_height="wrap_content"
+              android:text="Profile: Vibrate                               " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/silent"
+              android:layout_width="wrap_content"
+                                                                    android:drawableLeft="@drawable/silent"
+              
+              android:layout_height="wrap_content"
+              android:text="Profile: Silent                              " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/airplane"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                                                      android:drawableLeft="@drawable/airplane"
+              
+              android:text=" Airplane Mode                                 " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/gps"
+                                                                    android:drawableLeft="@drawable/gps"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="GPS                                                           "  />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/switch8"
+                                                                    android:drawableLeft="@drawable/nfc"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="NFC                                                            " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/blow"
+              android:layout_width="wrap_content"
+                                                                    android:drawableLeft="@drawable/brightness_low"
+              
+              android:layout_height="wrap_content"
+              android:text="Brightness: Low                                        " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/bmed"
+                                                                    android:drawableLeft="@drawable/brightness_medium"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Brightness Medium                                   " />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+          <Switch
+              android:id="@+id/bhigh"
+                                                                    android:drawableLeft="@drawable/brightness_high"
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Brightness: High                                       " />
+         <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+         </LinearLayout>
+         </ScrollView>
+
+</LinearLayout>

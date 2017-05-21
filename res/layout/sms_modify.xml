@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Edit"
+        android:gravity="center"
+        android:onClick="edit"
+        android:textColorLink="#ff0000ff"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+                android:gravity="center"
+                android:onClick="note"
+        
+        android:layout_height="40dp"
+        android:text="Save a Note"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+                android:onClick="ecard"
+                        android:gravity="center"
+        
+        android:layout_height="40dp"
+        android:text="Find e-card"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+                        android:onClick="delete"
+                                android:gravity="center"
+        
+        android:text="Delete"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+    
+</LinearLayout>

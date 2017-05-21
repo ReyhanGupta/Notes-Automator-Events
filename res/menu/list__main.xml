@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    
+    
+    <item
+        android:title="New Note"
+        android:id="@+id/newN" />
+    
+    <item
+        android:title="Clear All"
+        android:id="@+id/clear" />
+    <item
+        android:title="Settings"
+        android:id="@+id/set" />
+    <item
+        android:title="About Us"
+        android:id="@+id/aboutUs" />
+    
+    <item
+        android:title="Exit"
+        android:id="@+id/exit" />
+        
+
+</menu>

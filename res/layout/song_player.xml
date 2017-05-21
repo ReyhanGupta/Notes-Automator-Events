@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E8F6FF"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Main"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/MainIV"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+       android:layout_gravity="center"
+        android:src="@drawable/bg2" />
+
+   
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal" >
+    
+    
+     
+    
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+        android:layout_marginRight="20dp" 
+        android:layout_marginLeft="100dp" 
+         
+        android:background="@drawable/circle"
+        android:onClick="play"
+        android:src="@drawable/play" />
+    
+     <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+                        android:layout_marginRight="20dp" 
+        android:background="@drawable/circle"
+        android:onClick="pause"
+        android:src="@drawable/pause" />
+     
+      
+    </LinearLayout>
+    
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal" >
+
+   
+ <ImageButton
+        android:id="@+id/reduce"
+        android:layout_width="40dp"
+            android:layout_marginLeft="15dp"
+        
+        android:layout_height="40dp" 
+        android:background="@drawable/circle"
+        android:onClick="reduce"
+        android:src="@drawable/volume_down" />
+<SeekBar
+    android:id="@+id/seekBar1"
+    android:layout_marginLeft="15dp"
+    android:layout_width="174dp"
+    android:layout_height="wrap_content" />
+
+ <ImageButton
+        android:id="@+id/increase"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+                        android:layout_marginRight="20dp" 
+        android:background="@drawable/circle"
+        android:onClick="increase"
+        android:src="@drawable/volume_up" />
+    
+
+    </LinearLayout>
+    
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+
+

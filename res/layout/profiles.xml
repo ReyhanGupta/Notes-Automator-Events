@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/bg4"
+    
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:onClick="profileSelect"
+        android:text="Button" />
+
+    
+    
+    
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="92dp" >
+
+       			 <RadioButton
+          				 android:id="@+id/Home"
+           				 android:layout_width="wrap_content"
+           				 android:layout_height="wrap_content"
+          
+            			 android:text="Home" />
+     </RadioGroup>
+         
+    
+    
+    
+    
+ <RadioGroup
+        android:id="@+id/rgOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rg">
+      
+     
+    	<RadioButton
+      	  android:id="@+id/Office"
+       	 android:layout_width="wrap_content"
+       	 android:layout_height="wrap_content"
+        
+         android:layout_centerHorizontal="true"
+       	 android:layout_marginBottom="21dp"
+       	 android:text="Office" />
+         
+</RadioGroup>
+
+ <RadioGroup
+        android:id="@+id/rgSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rgOffice" >
+     
+    		  <RadioButton
+       			 android:id="@+id/Sleep"
+       			 android:layout_width="wrap_content"
+       			 android:layout_height="wrap_content"
+       			 android:layout_above="@+id/None"
+      			 android:layout_alignLeft="@+id/rg"
+      			 android:text="Sleep" />
+  </RadioGroup>
+     
+    
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rgNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
+        android:layout_marginTop="38dp"
+        android:layout_toLeftOf="@+id/button1" >
+
+        <RadioButton
+            android:id="@+id/None"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:text="None" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/music"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="music"
+        android:layout_alignParentBottom="true"
+        android:text="Do More With Automator" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rgOffice"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="34dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:gravity="center"
+        android:text="Automated Profiles"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

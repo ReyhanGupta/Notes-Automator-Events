@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F6FF"
+    android:orientation="vertical" >
+    
+ <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add New Event"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+                        android:layout_marginLeft="32dp"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeCal"
+            android:textOff="Call"
+                                    android:drawableTop="@drawable/call"
+            
+            android:textOn="Call" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/notify"
+            android:onClick="changeNot"
+            android:textOff="Notify"
+            android:textOn="Notify" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                                    android:drawableTop="@drawable/chat"
+                        android:checked="true"
+                        android:onClick="changeSms"
+            
+            android:textOff="SMS"
+            android:textOn="SMS" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Mail"
+                        android:drawableTop="@drawable/email"
+                        android:onClick="changeEma"
+            
+            android:textOn="Mail" />
+    </LinearLayout>
+    
+     
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SMS Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_chat_bubble_black_48dp" />
+
+   
+
+       
+    
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number" />
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/oneSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+         >
+        
+    </EditText>
+    
+    </LinearLayout>
+
+   
+
+            
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Text" />
+
+    <EditText
+        android:id="@+id/twoSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="When"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <ScrollView 
+        
+         android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rgSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:onClick="selDateSMS"
+            android:layout_height="wrap_content"
+            android:text="Select Date-Time" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+                        android:onClick="repeats"
+            
+            android:layout_height="wrap_content"
+            android:text="Repeat" />
+         <Button
+            android:id="@+id/button2666"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+                        android:onClick="saveSMS"
+            
+            android:text="Save" />
+        </LinearLayout>
+        </ScrollView>
+
+    
+</LinearLayout>

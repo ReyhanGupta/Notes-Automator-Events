@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E8F6FF"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Automated Profiles"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="215dp"
+    android:orientation="vertical" >
+    
+     <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+       			 <RadioButton
+          				 android:id="@+id/Home"
+          				       	             				 android:drawableLeft="@drawable/homesmall"
+          				 
+           				 android:layout_width="wrap_content"
+           				 android:layout_height="wrap_content"
+          
+            			 android:text="   Home" />
+     </RadioGroup>
+     
+     
+     <RadioGroup
+        android:id="@+id/rgOffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+       >
+      
+     
+    	<RadioButton
+      	  android:id="@+id/Office"
+      	             				 android:drawableLeft="@drawable/worksmall"
+      	  
+       	 android:layout_width="wrap_content"
+       	 android:layout_height="wrap_content"
+        
+       	 android:text="   Office" />
+         
+</RadioGroup>
+
+     <RadioGroup
+        android:id="@+id/rgSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+     
+    		  <RadioButton
+       			 android:id="@+id/Sleep"
+       			       	             				 android:drawableLeft="@drawable/sleepingsmall"
+       			 
+       			 android:layout_width="wrap_content"
+       			 android:layout_height="wrap_content"
+      			 android:text="   Sleep" />
+  </RadioGroup>
+  
+     <RadioGroup
+        android:id="@+id/rgCommute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+     
+    		  <RadioButton
+       			 android:id="@+id/Commute"
+       			 android:drawableLeft="@drawable/carsmall"
+       			 
+       			 android:layout_width="wrap_content"
+       			 android:layout_height="wrap_content"
+      			 android:text="   Commute" />
+  </RadioGroup>
+  
+     <RadioGroup
+        android:id="@+id/rgCustom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+     
+    		  <RadioButton
+       			 android:id="@+id/Custom1"
+       			 android:drawableLeft="@drawable/editsmall"
+       			 
+       			 android:layout_width="wrap_content"
+       			 android:layout_height="wrap_content"
+      			 android:text="   Custom" />
+  </RadioGroup>
+     
+     
+     
+      <RadioGroup
+        android:id="@+id/rgCustom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+  </RadioGroup>
+     
+     
+     <RadioGroup
+        android:id="@+id/rgNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/None"
+            android:drawableLeft="@drawable/cross"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   None" />
+    </RadioGroup>
+     
+     </LinearLayout>
+
+  
+  <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:onClick="profileSelect"
+        android:text="Save Profile" />
+  <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <Button
+        android:id="@+id/music"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="music"
+        android:layout_alignParentBottom="true"
+        android:text="Do More With Automator" />
+    </RelativeLayout>
+</LinearLayout>
